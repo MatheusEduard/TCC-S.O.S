@@ -55,10 +55,10 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="login.php">Login <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Serpentes</a>
@@ -68,6 +68,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Resgatantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pedidosResgates.php">Pedidos de Resgate</a>
                 </li>
 
             </ul>
@@ -90,13 +93,12 @@
         <div class="carousel-inner" >
             <div class="carousel-item">
                 <img src="img/cobra3.jpg" class="imagem-carrossel">
-                <svg class="bd-placeholder-img" focusable="false" height="100%" preserveAspectRatio="xMidYMid slice"
-                     role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
                 <div class="container">
 
                     <div class="carousel-caption text-left">
-                        <h1>Example headline</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <h1>Serpente(Nome Científico)</h1>
+                        <p>Descrição Breve da Serpente</p>
 
                     </div>
                 </div>
@@ -106,8 +108,8 @@
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <h1>Serpente(Nome Científico)</h1>
+                        <p>Descrição Breve da Serpente</p>
 
                     </div>
                 </div>
@@ -117,8 +119,8 @@
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
                 <div class="container">
                     <div class="carousel-caption text-right">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <h1>Serpente(Nome Científico)</h1>
+                        <p>Descrição Breve da Serpente</p>
 
                     </div>
                 </div>
@@ -128,8 +130,8 @@
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
                 <div class="container">
                     <div class="carousel-caption text-right">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <h1>Serpente(Nome Científico)</h1>
+                        <p>Descrição Breve da Serpente</p>
 
                     </div>
                 </div>
