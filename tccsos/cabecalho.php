@@ -74,10 +74,6 @@
                 </li>
 
             </ul>
-            <form class="form-inline mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Procurar" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
-            </form>
         </div>
     </nav>
 </header>

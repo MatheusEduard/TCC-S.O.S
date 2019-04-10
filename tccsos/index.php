@@ -35,58 +35,68 @@ include "cabecalho.php";
         <!-- /END THE FEATURETTES -->
 
     </div><!-- /.container -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="2" class=""</li>
-    </ol>
-    <div class="carousel-inner" >
-        <div class="carousel-item">
-            <img src="img/cobra3.jpg" class="imagem-carrossel">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
-            <div class="container">
+<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel2" data-slide-to="0" class=""></li>
+            <li data-target="#myCarousel2" data-slide-to="1" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="2" class=""</li>
+        </ol>
+        <div class="carousel-inner" >
+            <div class="carousel-item">
+                <img src="img/cobra3.jpg" class="imagem-carrossel">
+                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                <div class="container">
 
-                <div class="carousel-caption text-left">
-                    <h1>Serpente(Nome Científico)</h1>
-                    <p>Descrição Breve da Serpente</p>
+                    <div class="carousel-caption text-left">
+                        <h1>Serpente(Nome Científico)</h1>
+                        <p>Descrição Breve da Serpente</p>
 
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item teste active">
+                <img src="img/cobra2.jpg" class="imagem-carrossel">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Serpente(Nome Científico)</h1>
+                        <p>Descrição Breve da Serpente</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/cobra1.jpg" class="imagem-carrossel">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                <div class="container">
+                    <div class="carousel-caption text-right">
+                        <h1>Serpente(Nome Científico)</h1>
+                        <p>Descrição Breve da Serpente</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/cobra1.jpg" class="imagem-carrossel">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                <div class="container">
+                    <div class="carousel-caption text-right">
+                        <h1>Serpente(Nome Científico)</h1>
+                        <p>Descrição Breve da Serpente</p>
+
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="carousel-item teste active">
-            <img src="img/cobra2.jpg" class="imagem-carrossel">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Resgate#1</h1>
-
-
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="img/cobra1.jpg" class="imagem-carrossel">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
-            <div class="container">
-                <div class="carousel-caption text-right">
-                    <h1>Resgate#2</h1>
-
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="img/cobra1.jpg" class="imagem-carrossel">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
-            <div class="container">
-                <div class="carousel-caption text-right">
-                    <h1>Resgate#3</h1>
-
-                </div>
-            </div>
-        </div>
+        <a class="carousel-control-prev" href="#myCarousel2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-</div>
 <hr class="featurette-divider">
 
 
