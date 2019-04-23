@@ -1,3 +1,4 @@
+<hr class="featurette-divider">
 <footer class="container">
     <p class="float-right"><a href="#">Back to top</a></p>
     <p>© 2019-2019 S.O.S - Saviors of Snakes, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>

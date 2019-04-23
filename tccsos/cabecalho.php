@@ -1,5 +1,9 @@
 <!doctype html>
 
+<?php
+session_start();
+?>
+
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <meta charset="utf-8">
 <meta name="viewport" content="witdh=device-witdh, initial-scale=1, shrink-to-fit=no">
@@ -55,7 +59,18 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
+					<?php
+						if (isset($_SESSION['email'])){
+					?>
+					<h5><?=$_SESSION['email']?></h5>
+					<h3><a href="logout.php">Sair</a></h3>
+					<?php
+						}else{
+					?>
                     <a class="nav-link" href="login.php">Login <span class="sr-only">(current)</span></a>
+                    <?php 
+                    } 
+                    ?>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
@@ -74,6 +89,10 @@
                 </li>
 
             </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Procurar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+            </form>
         </div>
     </nav>
 </header>
