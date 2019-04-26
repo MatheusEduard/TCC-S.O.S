@@ -1,4 +1,3 @@
-# TrabalhoLoteria
-Trabalho de Programação requisitado pelo professor Jefferson Chaves;
-Executar o index.php;
-funções no funcoes.php;
+# Como Usar nosso site
+colocar a pasta tcc_sos no localhost
+caso queira usar o login o email para logar é: matheuseduardo8000@gmail.com e a senha é: admin
