@@ -1,16 +1,16 @@
--- Geração de Modelo físico
+-- GeraÃ§Ã£o de Modelo fÃ­sico
 -- Sql ANSI 2003 - brModelo.
 
 
 
 CREATE TABLE tipo_usuario (
 descricao_tipo_usuario varchar(200),
-cod_tipo_usuario int(4) NOT NULL AUTO INCREMENT PRIMARY KEY
+cod_tipo_usuario int(4) NOT NULL AUTO_INCREMENT PRIMARY KEY
 );
 
 CREATE TABLE tipo_resgatante (
 descricao_tipo_resgatante varchar(200),
-cod_tipo_resgatante int(4) NOT NULL AUTO INCREMENT PRIMARY KEY
+cod_tipo_resgatante int(4) NOT NULL AUTO_INCREMENT PRIMARY KEY
 );
 
 CREATE TABLE resgastante (
@@ -26,14 +26,14 @@ FOREIGN KEY(cod_tipo_resgatante) REFERENCES tipo_resgatante (cod_tipo_resgatante
 
 CREATE TABLE admin (
 login varchar(35),
-cod_admin int(4) NOT NULL AUTO INCREMENT PRIMARY KEY,
+cod_admin int(4) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 senha varchar(35),
 cod_tipo_usuario int(4),
 FOREIGN KEY(cod_tipo_usuario) REFERENCES tipo_usuario (cod_tipo_usuario)
 );
 
 CREATE TABLE serperntes (
-cod_serpente int(8) NOT NULL AUTO INCREMENT PRIMARY KEY,
+cod_serpente int(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 carac_1 varchar(200),
 carac_2 varchar(200),
 carac_3 varchar(200),
