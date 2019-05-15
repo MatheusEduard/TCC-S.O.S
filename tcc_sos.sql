@@ -32,7 +32,7 @@ cod_tipo_usuario int(4),
 FOREIGN KEY(cod_tipo_usuario) REFERENCES tipo_usuario (cod_tipo_usuario)
 );
 
-CREATE TABLE serperntes (
+CREATE TABLE serpentes (
 cod_serpente int(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 carac_1 varchar(200),
 carac_2 varchar(200),
