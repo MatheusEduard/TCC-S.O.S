@@ -47,7 +47,7 @@ cod_serpente int(8),
 local_captura varchar(200),
 horario_captura varchar(5),
 FOREIGN KEY(cpf_resg) REFERENCES resgastante (cpf_resg),
-FOREIGN KEY(cod_serpente) REFERENCES serperntes (cod_serpente)
+FOREIGN KEY(cod_serpente) REFERENCES serpentes (cod_serpente)
 );
 
 CREATE TABLE pedidos_resgates (
