@@ -81,7 +81,7 @@ session_start();
 					<?php
 						}else{
 					?>
-                    <a class="nav-link" href="login.php">Login<span class="sr-only">(current)</span></a>
+                    <a href="registroUser.php">Registrar-se</a><a class="nav-link" href="login.php">Login<span class="sr-only">(current)</span></a>
                     <?php 
                     } 
                     ?>

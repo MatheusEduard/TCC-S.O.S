@@ -31,7 +31,7 @@ include "cabecalho.php";
                     <select class="form-control">
                         <option>Pequena (De 20cm até 1m)</option>
                         <option>Média (De 1m até 2m)</option>
-                        <option>Pequena (3m ou mais)</option>
+                        <option>Grande (3m ou mais)</option>
                         <option>Não Sei</option>
                     </select>
                 </div>
