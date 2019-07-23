@@ -26,10 +26,23 @@ include "cabecalho.php";
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
             <div class="col-md-5">
-               <img src="bob2.jpg"class="imagem-home">
+               <img src="img/cobraTeste.jpg"class="imagem-home">
             </div>
         </div>
 
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            
+                <img src="img/aaa.jpg" class="logosPart">
+                <img src="img/bbb.jpg" class="logosPart">
+                <img src="img/ccc.jpg" class="logosPart">
+                
+                <p class="partNome"><b>Matheus Eduardo dos Santos</b></p>
+                <p class="partNome"><b>Guilherme Luis Da Silva Sagave</b></p>
+                <p class="partNome"><b>Matheus Daniel</b></p>
+                
+            
+        </div>
         <hr class="featurette-divider">
 
         <!-- /END THE FEATURETTES -->
@@ -43,19 +56,19 @@ include "cabecalho.php";
     </ol>
     <div class="carousel-inner" >
         <div class="carousel-item">
-            <img src="img/cobra3.jpg" class="imagem-carrossel">
+            <img src="img/resgate3.jpg" class="imagem-carrossel">
             <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
             <div class="container">
 
                 <div class="carousel-caption text-left">
-                    <h1>Serpente(Nome Científico)</h1>
-                    <p>Descrição Breve da Serpente</p>
+                    <h1>Resgate#2</h1>
+                    
 
                 </div>
             </div>
         </div>
         <div class="carousel-item teste active">
-            <img src="img/cobra2.jpg" class="imagem-carrossel">
+            <img src="img/resgate2.jpg" class="imagem-carrossel">
             <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
             <div class="container">
                 <div class="carousel-caption">
@@ -66,7 +79,7 @@ include "cabecalho.php";
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/cobra1.jpg" class="imagem-carrossel">
+            <img src="img/resgate1.jpg" class="imagem-carrossel">
             <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
             <div class="container">
                 <div class="carousel-caption text-right">

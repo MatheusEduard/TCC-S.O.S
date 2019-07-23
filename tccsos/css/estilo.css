@@ -13,3 +13,62 @@
 .imagem-home{
     width:80%;
 }
+
+.login{
+	margin-right: 2%;
+	list-style-type: none;
+}
+
+.formulario{
+	margin-left: 36.9%;
+}
+.caracSerp{
+	list-style-type:none;
+	font-size: 100%; 
+}
+.posicioDadosSerp{
+ margin-left: 29%;
+}
+.logosPart{
+	width:30%;
+	height: 15%;
+	margin-right:3%
+
+
+}
+.partNome{
+	margin-right:12%;
+	margin-left: 4%;
+}
+
+.titulo{
+margin-left: 35%;
+margin-bottom: 5%;
+}
+
+.titulo2{
+margin-left: 20%;
+margin-bottom: 5%;
+}
+
+.titulo3{
+margin-left: 1%;
+margin-bottom: 5%;
+}
+
+.botaoSub1{
+	margin-left: 40%;
+}
+
+.botaoSub2{
+	margin-left: 45%;
+}
+
+.formulario2{
+	margin-left: 25%;
+}
+
+.tituloFormSerp{
+	margin-bottom: 5%;
+	margin-left: 22%;
+}

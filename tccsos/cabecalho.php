@@ -58,37 +58,34 @@ session_start();
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-					<?php
-						if (isset($_SESSION['email'])){
-					?>
-					<h5><?=$_SESSION['email']?></h5>
-					<h3><a href="logout.php">Sair</a></h3>
-					<?php
-						}else{
-					?>
-                    <a class="nav-link" href="login.php">Login <span class="sr-only">(current)</span></a>
-                    <?php 
-                    } 
-                    ?>
-                </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Serpentes</a>
+                    <a class="nav-link" href="serpentes.php">Serpentes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Questionario</a>
+                    <a class="nav-link" href="dicas.php">Dicas e Curiosidades</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Resgatantes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pedidosResgates.php">Pedidos de Resgate</a>
+                    <a class="nav-link" href="pedidoResg.php">Pedidos de Resgate</a>
                 </li>
 
             </ul>
+             <li class="login">
+					<?php
+						if (isset($_SESSION['email'])){
+					?>
+					<h5><?=$_SESSION['email']?></h5>
+					<h5><a href="logout.php">Sair</a></h3>
+					<?php
+						}else{
+					?>
+                    <a class="nav-link" href="login.php">Login<span class="sr-only">(current)</span></a>
+                    <?php 
+                    } 
+                    ?>
+                </li>
             <form class="form-inline mt-2 mt-md-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Procurar" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
@@ -107,7 +104,7 @@ session_start();
         </ol>
         <div class="carousel-inner" >
             <div class="carousel-item">
-                <img src="img/cobra3.jpg" class="imagem-carrossel">
+                <img src="img/serpentes/cobra3.jpg" class="imagem-carrossel">
                  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
                 <div class="container">
 
@@ -119,7 +116,7 @@ session_start();
                 </div>
             </div>
             <div class="carousel-item teste active">
-                <img src="img/cobra2.jpg" class="imagem-carrossel">
+                <img src="img/serpentes/cobra2.jpg" class="imagem-carrossel">
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
                 <div class="container">
                     <div class="carousel-caption">
@@ -130,18 +127,7 @@ session_start();
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/cobra1.jpg" class="imagem-carrossel">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
-                <div class="container">
-                    <div class="carousel-caption text-right">
-                        <h1>Serpente(Nome Científico)</h1>
-                        <p>Descrição Breve da Serpente</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="img/cobra1.jpg" class="imagem-carrossel">
+                <img src="img/serpentes/cobra1.jpg" class="imagem-carrossel">
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
                 <div class="container">
                     <div class="carousel-caption text-right">
