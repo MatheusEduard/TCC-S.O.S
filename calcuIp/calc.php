@@ -105,11 +105,9 @@ function criaSubRedes($ip,$masc){
 }
 //$rede= criaSubRedes("192.2.2.0","/32");
 //print_r($rede);
-
 function redeip($ip,$masc){
     $redeip= array();
     $subRede=criaSubRedes($ip,$masc);
-
     if($masc=="/24"){
         for ($i=0; $i <1 ; $i++) { 
             array_unshift($redeip,$subRede[0][$i][0]);
@@ -146,20 +144,16 @@ function redeip($ip,$masc){
     }elseif ($masc=="/32") {
         for ($i=0; $i <256 ; $i++) { 
             array_unshift($redeip,$subRede[0][$i][0]);
-
         }
     }
     $redeip = array_reverse($redeip);
     return $redeip;
 }
-
 //$rede= redeip("192.2.2.0","/28");
 //print_r($rede);
-
 function brodip($ip,$masc){
     $brodip= array();
     $subRede=criaSubRedes($ip,$masc);
-
     if($masc=="/24"){
         for ($i=0; $i <1 ; $i++) { 
             $brodip[]=end($subRede[0][$i]);
@@ -196,13 +190,181 @@ function brodip($ip,$masc){
     }elseif ($masc=="/32") {
         for ($i=0; $i <256 ; $i++) { 
             $brodip[]=end($subRede[0][$i]);
-
         }
     }
     
     return $brodip;
 }
+//$rede= brodip("192.2.2.0","/28");
+//print_r($rede);
 
-$rede= redebrod("192.2.2.0","/28");
+function qtdSubRed($masc){
+    $qtdSubRed=0;
+    if($masc=="/24"){
+        $qtdSubRed=1;
+        
+    }elseif ($masc=="/25") {
+        $qtdSubRed=2;   
+    
+    }elseif ($masc=="/26") {
+        $qtdSubRed=4;  
+    
+    }elseif ($masc=="/27") {
+        $qtdSubRed=8;    
+        
+    }elseif ($masc=="/28") {
+        $qtdSubRed=16;   
+        
+    }elseif ($masc=="/29") {
+        $qtdSubRed=32;    
+
+    }elseif ($masc=="/30") {
+        $qtdSubRed=64;   
+
+    }elseif ($masc=="/31") {
+        $qtdSubRed=128;
+
+    
+    }elseif ($masc=="/32") {
+        $qtdSubRed=256;
+
+    }
+    
+    return $qtdSubRed;
+}
+//$rede= qtdSubRed("/28");
+//print_r($rede);
+
+function qtdHostIp($masc){
+    
+$qtdHostIp=0;
+
+if($masc=="/24"){
+    $qtdHostIp=254;
+    
+}elseif ($masc=="/25") {
+    $qtdHostIp=126;   
+
+}elseif ($masc=="/26") {
+    $qtdHostIp=62;  
+
+}elseif ($masc=="/27") {
+    $qtdHostIp=30;    
+    
+}elseif ($masc=="/28") {
+    $qtdHostIp=14;   
+    
+}elseif ($masc=="/29") {
+    $qtdHostIp=6;    
+
+}elseif ($masc=="/30") {
+    $qtdHostIp=2;   
+
+}elseif ($masc=="/31") {
+    $qtdHostIp=2;
+
+
+}elseif ($masc=="/32") {
+    $qtdHostIp=1;
+
+}
+
+return $qtdHostIp;
+}
+
+//$rede= qtdHostIp("/28");
+//print_r($rede);
+
+function primHostIp($ip,$masc){
+    $primHostIp= array();
+    $subRede=criaSubRedes($ip,$masc);
+    if($masc=="/24"){
+        for ($i=0; $i <1 ; $i++) { 
+            array_unshift($primHostIp,$subRede[0][$i][1]);
+        }
+    }elseif ($masc=="/25") {
+        for ($i=0; $i <2 ; $i++) { 
+            array_unshift($primHostIp,$subRede[0][$i][1]);
+        }
+    }elseif ($masc=="/26") {
+        for ($i=0; $i <4 ; $i++) { 
+            array_unshift($primHostIp,$subRede[0][$i][1]);
+        }
+    }elseif ($masc=="/27") {
+        for ($i=0; $i <8 ; $i++) { 
+            array_unshift($primHostIp,$subRede[0][$i][1]);
+        }    
+    }elseif ($masc=="/28") {
+        for ($i=0; $i <16 ; $i++) { 
+            array_unshift($primHostIp,$subRede[0][$i][1]);
+        }
+        
+    }elseif ($masc=="/29") {
+        for ($i=0; $i <32 ; $i++) { 
+            array_unshift($primHostIp,$subRede[0][$i][1]);
+        }
+    }elseif ($masc=="/30") {
+        for ($i=0; $i <64 ; $i++) { 
+            array_unshift($primHostIp,$subRede[0][$i][1]);
+        }
+    }elseif ($masc=="/31") {
+        for ($i=0; $i <128 ; $i++) { 
+            array_unshift($primHostIp,$subRede[0][$i][0]);
+        }
+    }elseif ($masc=="/32") {
+        for ($i=0; $i <256 ; $i++) { 
+            array_unshift($primHostIp,$subRede[0][$i][0]);
+        }
+    }
+    $primHostIp = array_reverse($primHostIp);
+    return $primHostIp;
+}
+//$rede= primHostIp("192.2.2.0","/31");
+//print_r($rede);
+function ultHostIp($ip,$masc){
+    $ultHostIp= array();
+    $subRede=criaSubRedes($ip,$masc);
+    if($masc=="/24"){
+        for ($i=0; $i <1 ; $i++) { 
+            array_unshift($ultHostIp,$subRede[0][$i][count($subRede[0][$i])-2]);
+        }
+    }elseif ($masc=="/25") {
+        for ($i=0; $i <2 ; $i++) { 
+            array_unshift($ultHostIp,$subRede[0][count($subRede[0][$i])-2]);
+        }
+    }elseif ($masc=="/26") {
+        for ($i=0; $i <4 ; $i++) { 
+            array_unshift($ultHostIp,$subRede[0][$i][count($subRede[0][$i])-2]);
+        }
+    }elseif ($masc=="/27") {
+        for ($i=0; $i <8 ; $i++) { 
+            array_unshift($ultHostIp,$subRede[0][$i][count($subRede[0][$i])-2]);
+        }    
+    }elseif ($masc=="/28") {
+        for ($i=0; $i <16 ; $i++) { 
+            array_unshift($ultHostIp,$subRede[0][$i][count($subRede[0][$i])-2]);
+        }
+        
+    }elseif ($masc=="/29") {
+        for ($i=0; $i <32 ; $i++) { 
+            array_unshift($ultHostIp,$subRede[0][$i][count($subRede[0][$i])-2]);
+        }
+    }elseif ($masc=="/30") {
+        for ($i=0; $i <64 ; $i++) { 
+            array_unshift($ultHostIp,$subRede[0][$i][count($subRede[0][$i])-2]);
+        }
+    }elseif ($masc=="/31") {
+        for ($i=0; $i <128 ; $i++) { 
+            array_unshift($ultHostIp,$subRede[0][$i][count($subRede[0][$i])-1]);
+        }
+    }elseif ($masc=="/32") {
+        for ($i=0; $i <256 ; $i++) { 
+            array_unshift($ultHostIp,$subRede[0][$i][0]);
+        }
+    }
+    $ultHostIp = array_reverse($ultHostIp);
+    return $ultHostIp;
+}
+$rede= ultHostIp("192.2.2.0","/26");
 print_r($rede);
 ?>
