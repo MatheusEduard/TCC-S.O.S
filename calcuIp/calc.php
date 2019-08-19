@@ -6,10 +6,10 @@ return $array_ip;
 //$ip ="192.65.100.0";
 //$aa=divideIP($ip);
 //print_r($aa);
-function verificaIP($ip){
+function verificaIPeMasc($ip,$masc){
     $valida="valor valido";
     $array_ip = divideIP($ip);
-if(count($array_ip)==4){
+if(count($array_ip)==4 and $masc=="/24" or $masc=="/25" or $masc=="/26" or $masc=="/27" or $masc=="/28" or $masc=="/29" or$masc=="/30" or $masc=="/31" or $masc=="/32"){
     for($i=0;$i<=count($array_ip);$i++){
         if($array_ip[$i]>255){
             $valida="valor invalido";
@@ -20,9 +20,9 @@ if(count($array_ip)==4){
     }
     return $valida;
 }
-//$ip ="255.655.100.0";
-//$validacao=verificaIP($ip);
-//echo $validacao;
+$ip ="255.255.100.0";
+$validacao=verificaIPeMasc($ip,"/34");
+echo $validacao;
 function criaSubRedes($ip,$masc){
     $array_ip=divideIP($ip);
     $rede=array();
@@ -365,6 +365,42 @@ function ultHostIp($ip,$masc){
     $ultHostIp = array_reverse($ultHostIp);
     return $ultHostIp;
 }
-$rede= ultHostIp("192.2.2.0","/26");
-print_r($rede);
+//$rede= ultHostIp("192.2.2.0","/26");
+//print_r($rede);
+
+function mascDec($masc){
+    
+    $mascDec=0;
+    
+    if($masc=="/24"){
+        $mascDec="255.255.255.0";
+        
+    }elseif ($masc=="/25") {
+        $mascDec="255.255.255.128";   
+    
+    }elseif ($masc=="/26") {
+        $mascDec="255.255.255.192";  
+    
+    }elseif ($masc=="/27") {
+        $mascDec="255.255.255.224";    
+        
+    }elseif ($masc=="/28") {
+        $mascDec="255.255.255.240";   
+        
+    }elseif ($masc=="/29") {
+        $mascDec="255.255.255.248";    
+    
+    }elseif ($masc=="/30") {
+        $mascDec="255.255.255.252";   
+    
+    }elseif ($masc=="/31") {
+        $mascDec="255.255.255.254";
+    
+    
+    }elseif ($masc=="/32") {
+        $mascDec="255.255.255.255";
+    
+    }
+    return $mascDec;
+}
 ?>
