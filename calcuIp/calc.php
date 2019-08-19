@@ -156,51 +156,51 @@ function redeip($ip,$masc){
 //$rede= redeip("192.2.2.0","/28");
 //print_r($rede);
 
-function redebrod($ip,$masc){
-    $redebrod= array();
+function brodip($ip,$masc){
+    $brodip= array();
     $subRede=criaSubRedes($ip,$masc);
 
     if($masc=="/24"){
         for ($i=0; $i <1 ; $i++) { 
-            $redebrod[]=end($subRede[0][$i]);
+            $brodip[]=end($subRede[0][$i]);
         }
     }elseif ($masc=="/25") {
         for ($i=0; $i <2 ; $i++) { 
-            $redebrod[]=end($subRede[0][$i]);
+            $brodip[]=end($subRede[0][$i]);
         }
     }elseif ($masc=="/26") {
         for ($i=0; $i <4 ; $i++) { 
-            $redebrod[]=end($subRede[0][$i]);
+            $brodip[]=end($subRede[0][$i]);
         }
     }elseif ($masc=="/27") {
         for ($i=0; $i <8 ; $i++) { 
-            $redebrod[]=end($subRede[0][$i]);
+            $brodip[]=end($subRede[0][$i]);
         }    
     }elseif ($masc=="/28") {
         for ($i=0; $i <16 ; $i++) { 
-            $redebrod[]=end($subRede[0][$i]);
+            $brodip[]=end($subRede[0][$i]);
         }
         
     }elseif ($masc=="/29") {
         for ($i=0; $i <32 ; $i++) { 
-            $redebrod[]=end($subRede[0][$i]);
+            $brodip[]=end($subRede[0][$i]);
         }
     }elseif ($masc=="/30") {
         for ($i=0; $i <64 ; $i++) { 
-            $redebrod[]=end($subRede[0][$i]);
+            $brodip[]=end($subRede[0][$i]);
         }
     }elseif ($masc=="/31") {
         for ($i=0; $i <128 ; $i++) { 
-            $redebrod[]=end($subRede[0][$i]);
+            $brodip[]=end($subRede[0][$i]);
         }
     }elseif ($masc=="/32") {
         for ($i=0; $i <256 ; $i++) { 
-            $redebrod[]=end($subRede[0][$i]);
+            $brodip[]=end($subRede[0][$i]);
 
         }
     }
     
-    return $redebrod;
+    return $brodip;
 }
 
 $rede= redebrod("192.2.2.0","/28");
