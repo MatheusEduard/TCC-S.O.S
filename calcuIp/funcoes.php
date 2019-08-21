@@ -10,14 +10,17 @@ function verificaIPeMasc($ip,$masc){
     $valida="valor valido";
     $a=4;
     $array_ip = divideIP($ip);
-if(count($array_ip)== $a and $masc=="/24" or $masc=="/25" or $masc=="/26" or $masc=="/27" or $masc=="/28" or $masc=="/29" or$masc=="/30" or $masc=="/31" or $masc=="/32"){
-    for($i=0;$i<=count($array_ip);$i++){
-        if($array_ip[$i]>255){
-            $valida="valor invalido";
-        }
-      }
-    }else{
+	if($masc=="/24" or $masc=="/25" or $masc=="/26" or $masc=="/27" or $masc=="/28" or $masc=="/29" or$masc=="/30" or $masc=="/31" or $masc=="/32"){
+    	for($i=0;$i<=count($array_ip);$i++){
+        	if($array_ip[$i]>255 or $array_ip[$i]<0){
+            	$valida="valor invalido";
+        	}
+      	}
+    } else {
         $valida="valor invalido";
+    }
+    if (count($array_ip) != 4) {
+    	$valida="valor invalido";
     }
     return $valida;
 }

@@ -4,6 +4,7 @@ include "funcoes.php";
 error_reporting(E_WARNING);
 ini_set(“display_errors”, 1 );
 
+
 ?>
 
 <!DOCTYPE html>
@@ -38,64 +39,55 @@ if (isset($_GET['acao']) && $_GET['acao'] == 'calcular' ){
     $tipIP=tipIP($_POST["ip"]);
     if($valido=="valor valido"){
 ?>
-        <ul style="list-style-type: none;">
-<li class="titulo">Quantidade de Sub-Redes Que Podem Ser Criadas: <?=$qtdSubRed?></li>
-</ul>
-<ul style="list-style-type: none;">
-<li class="titulo">Quantidade de IPs Host por Sub-Rede: <?=$qtdHost?></li>
-</ul>
-<ul style="list-style-type: none;">
-<li class="titulo">Mascara de Sub-rede em Formato Decimal: <?=$mascDec?></li>
-</ul>
-<ul style="list-style-type: none;">
-<li class="titulo">Clase do IP: <?=$classeIP?></li>
-</ul>
-<ul style="list-style-type: none;">
-<li class="titulo">Tipo de IP: <?=$tipIP?></li>
-</ul>
-<tr>
-<th>
-<ul style="list-style-type: none;">
-<li class="titulo">IPs de Rede:</li>
-<?php
-for($i=0;$i<$qtdSubRed;$i++){
-    echo "<li class='subtitulo'>".$ipRede[$i]."</li>";
-}
-?>
-</th>
-<th>
-</ul>
-<ul style="list-style-type: none;">
-<li class="titulo">IPs de Broadcast</li>
-<?php
-for($i=0;$i<$qtdSubRed;$i++){
-    echo "<li class='subtitulo'>".$ipBrod[$i]."</li>";
-}
-?>
-</th>
-<th>
-</ul>
-<ul style="list-style-type: none;">
-<li class="titulo">Primeiro IP Host Por Sub-Rede:</li>
-<?php
-for($i=0;$i<$qtdSubRed;$i++){
-    echo "<li class='subtitulo'>".$primHost[$i]."</li>";
-}
-?>
-</th>
-<th>
-</ul>
-<ul style="list-style-type: none;">
-<li class="titulo">Ultimo IP Host Por Sub-Rede:</li>
-<?php
-for($i=0;$i<$qtdSubRed;$i++){
-    echo "<li class='subtitulo'>".$ultHost[$i]."</li>";
-}
-?>
-</th>
-</ul>
-</tr>
-<?php
+    <ul style="list-style-type: none;">
+        <li class="titulo">Quantidade de Sub-Redes Que Podem Ser Criadas: <?=$qtdSubRed?></li>
+    </ul>
+    <ul style="list-style-type: none;">
+        <li class="titulo">Quantidade de IPs Host por Sub-Rede: <?=$qtdHost?></li>
+    </ul>
+    <ul style="list-style-type: none;">
+        <li class="titulo">Mascara de Sub-rede em Formato Decimal: <?=$mascDec?></li>
+    </ul>
+    <ul style="list-style-type: none;">
+        <li class="titulo">Clase do IP: <?=$classeIP?></li>
+    </ul>
+    <ul style="list-style-type: none;">
+        <li class="titulo">Tipo de IP: <?=$tipIP?></li>
+    </ul>
+
+    <ul style="list-style-type: none;">
+        <li class="titulo">IPs de Rede:</li>
+    <?php
+        for($i=0;$i<$qtdSubRed;$i++){
+            echo "<li class='subtitulo'>".$ipRede[$i]."</li>";
+    }
+    ?>
+    </ul>
+    <ul style="list-style-type: none;">
+        <li class="titulo">IPs de Broadcast</li>
+    <?php
+        for($i=0;$i<$qtdSubRed;$i++){
+            echo "<li class='subtitulo'>".$ipBrod[$i]."</li>";
+    }
+    ?>
+    </ul>
+    <ul style="list-style-type: none;">
+        <li class="titulo">Primeiro IP Host Por Sub-Rede:</li>
+    <?php
+        for($i=0;$i<$qtdSubRed;$i++){
+            echo "<li class='subtitulo'>".$primHost[$i]."</li>";
+    }
+    ?>
+    </ul>
+    <ul style="list-style-type: none;">
+        <li class="titulo">Ultimo IP Host Por Sub-Rede:</li>
+    <?php
+        for($i=0;$i<$qtdSubRed;$i++){
+            echo "<li class='subtitulo'>".$ultHost[$i]."</li>";
+        }
+    ?>
+    </ul>
+    <?php
  
 }else{
         echo"Algum Valor Inserido É Inválido!!";
