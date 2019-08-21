@@ -2,9 +2,114 @@
     width: 100%;
     font-size: 30px;
     font-family: cursive;
+    margin-left:1%;
+}
+.titulo2{
+    width: 100%;
+    font-size: 30px;
+    font-family: cursive;
+    margin-left:8%;
+}
+.tituloip{
+width: 100%;
+    font-size: 30px;
+    font-family: cursive;
+    margin-left:4%;
+}
+.tituloip2{
+width: 100%;
+    font-size: 30px;
+    font-family: cursive;
+    margin-left:12%;
+}
+.tituloip3{
+width: 100%;
+    font-size: 30px;
+    font-family: cursive;
+    
+}
+.tituloip4{
+width: 100%;
+    font-size: 30px;
+    font-family: cursive;
+    margin-left:35%;
+}
+.tituloip5{
+width: 100%;
+    font-size: 30px;
+    font-family: cursive;
+    margin-left:28%;
+}
+.tituloip6{
+width: 100%;
+    font-size: 30px;
+    font-family: cursive;
+    margin-left:23%;
 }
 .subtitulo{
     width: 100%;
     font-size: 20px;
     font-family: cursive;
+    margin-left:40%;
+    
+}
+.subtitulo2{
+    width: 100%;
+    font-size: 20px;
+    font-family: cursive;
+    margin-left:34%;
+    
+}.subtitulo3{
+    width: 100%;
+    font-size: 20px;
+    font-family: cursive;
+    margin-left:31%;
+    
+}.subtitulo4{
+    width: 100%;
+    font-size: 20px;
+    font-family: cursive;
+    margin-left:31%;
+    
+}.subtitulo5{
+    width: 100%;
+    font-size: 20px;
+    font-family: cursive;
+    margin-left:31%;
+    
+}
+
+.formu{
+margin-left:40%;
+width:19%;
+margin-top:2%;
+border-style: solid;
+background-color:gray;
+
+}
+
+.insert1{
+margin-left:24%;
+border-radius: 10px;
+
+}
+
+.insert2{
+margin-left:24%;
+border-radius: 10px;
+
+}
+
+.subm{
+margin-left:41%;
+margin-top:4%;
+border-radius: 10px;
+background-color:white;
+
+}
+.ips{
+border-style: solid;
+margin-top:5%;
+width:52%;
+margin-left:24%;
 }
