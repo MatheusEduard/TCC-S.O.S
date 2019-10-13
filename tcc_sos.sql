@@ -8,20 +8,13 @@ descricao_tipo_usuario varchar(200),
 cod_tipo_usuario int(4) NOT NULL AUTO_INCREMENT PRIMARY KEY
 );
 
-CREATE TABLE tipo_resgatante (
-descricao_tipo_resgatante varchar(200),
-cod_tipo_resgatante int(4) NOT NULL AUTO_INCREMENT PRIMARY KEY
-);
-
 CREATE TABLE resgastante (
 nome_resg varchar(200),
 senha_resg varchar(35),
 email_resg varchar(200),
 cpf_resg varchar(14) NOT NULL PRIMARY KEY,
 cod_tipo_usuario int(4),
-cod_tipo_resgatante int(4),
-FOREIGN KEY(cod_tipo_usuario) REFERENCES tipo_usuario (cod_tipo_usuario),
-FOREIGN KEY(cod_tipo_resgatante) REFERENCES tipo_resgatante (cod_tipo_resgatante)
+FOREIGN KEY(cod_tipo_usuario) REFERENCES tipo_usuario (cod_tipo_usuario)
 );
 
 CREATE TABLE admin (
